@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SOLAR SYSTEM</title>
+</head>
+<style>
+    body{
+        margin:0;
+        height:100px;
+        display:flex;
+        align-items: center;
+        justify-content:center;
+        background-color:black;
+        overflow:hidden;
+    }
+    .container{
+        font-size:20px;
+        width:40;
+        height:20;
+        position:relative;
+    }
+    .sun{
+        position:absolute;
+        top:15;
+        left:15;
+        width:25;
+        height:25;
+        background-color: yellow;
+        border-radius:50%;
+    }
+    .earth,.moon{
+        position:absolute;
+        border-style:solid;
+        border: width 0.1em;
+        border-radius: 50%;
+    }
+    .earth{
+        top: 5px;
+        left: 5px;
+        width:30em;
+        height:30em;
+        animation:orbit 36.5s linear infinite;
+    }
+    .moon{
+        top:0;
+        right:0;
+        width:8em;
+        height:8em;
+        animation:orbit 3.5s linear infinite;
+    }
+    .earth::before,
+    .moon:: before {
+        content: '';
+    position:absolute;
+    border-radius:50%;
+    }
+    
+
+    
+
+
+
+
+</style>
+<body>
+    <div class="container">
+         <div class="sun"></div>
+         <div class="earth">
+            <div class="moon"></div>
+         </div>
+    </div>
+    
+</body>
+</html>
